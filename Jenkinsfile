@@ -22,7 +22,7 @@ pipeline{
 
         stage('Test') {
             steps {
-                echo 'Running tests'
+                bat "dotnet test --no-restore --configuration Release"
             }
         }
 
