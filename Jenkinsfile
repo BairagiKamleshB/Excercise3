@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Build') {
             steps {
-                echo 'Building application'
+                bat "dotnet build Excercise3.sln --congiguration Release"
             }
         }
 
