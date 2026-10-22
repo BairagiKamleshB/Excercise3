@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Build') {
             steps {
-                bat "dotnet build Excercise3.sln --congiguration Release"
+                bat "dotnet build Excercise3.sln --configuration Release"
             }
         }
 
